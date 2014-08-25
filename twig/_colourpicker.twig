@@ -11,7 +11,7 @@
 
 <fieldset class="colourpicker">
     <div class="col-sm-12">
-        <label class="control-label">{{field.label}}</label>
+        <label class="control-label">{{field.label|default(field.key)}}</label>
         <select data-colourpicker {{ macro.attr(attr_opt) }}>
             {% for key, value in field.values %}
                 {% set isSelected =  (key == context.content.get(key)) %}
