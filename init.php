@@ -1,3 +1,5 @@
 <?php
-use Bolt\Extensions\Colourpicker\Extension;
+
+namespace Bolt\Extensions\Colourpicker;
+
 $app['extensions']->register(new Extension($app));
