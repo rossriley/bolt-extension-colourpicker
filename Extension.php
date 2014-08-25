@@ -12,6 +12,7 @@ class Extension extends BaseExtension
     {
         parent::__construct($app);
         $this->app['config']->fields->addField(new ColourPickField());
+        $this->app['htmlsnippets'] = true;
         if ($this->app['config']->getWhichEnd()=='backend') {
             $this->app['twig.loader.filesystem']->prependPath(__DIR__."/twig");
         }
