@@ -12,7 +12,7 @@
 <fieldset class="colourpicker">
     <div class="col-sm-12">
         <label class="control-label">{{field.label}}</label>
-        <select name="ext-colorpicker" {{ macro.attr(attr_opt) }}>
+        <select data-colourpicker {{ macro.attr(attr_opt) }}>
             {% for key, value in field.values %}
                 {% set isSelected =  (key == context.content.get(key)) %}
                 <option value="{{key}}"{% if isSelected %} selected="selected"{% endif %}>{{value}}</option>
