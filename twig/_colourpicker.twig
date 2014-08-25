@@ -1,0 +1,22 @@
+{#=== Options ===========================================================================================================#}
+
+{% set attr_opt = {
+    class:        field.class|default(''),
+    name_id:      key,
+    required:     field.required|default(false),
+    readonly:     field.readonly|default(false)
+}%}
+
+{#=== FIELDSET =======================================================================================================#}
+
+<fieldset class="colourpicker">
+    <div class="col-sm-12">
+        <label class="control-label">{{field.label}}</label>
+        <select name="ext-colorpicker" {{ macro.attr(attr_opt) }}>
+            {% for key, value in field.values %}
+                {% set isSelected:  key = context.content.get(key) %}
+                <option value="{{key}}"{% if isSelected %} selected="selected"{% endif %}>{{value}}</option>
+            {% endfor %}
+        </select>
+    </div>
+</fieldset>
