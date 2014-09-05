@@ -15,5 +15,9 @@
         "psr-4": {
             "Bolt\\Extensions\\Colourpicker\\": ""
         }
+    },
+    
+    "extra": {
+        "bolt-assets": "assets"
     }
 }
