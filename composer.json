@@ -8,7 +8,7 @@
     "license": "MIT",
     "authors": [{"name": "Ross Riley", "email": "riley.ross@gmail.com"}
     ],
-    "tags": [
+    "keywords": [
         "backend", "field", "colourpicker"
     ],
     "autoload": {
