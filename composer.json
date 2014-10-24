@@ -8,6 +8,9 @@
     "license": "MIT",
     "authors": [{"name": "Ross Riley", "email": "riley.ross@gmail.com"}
     ],
+    "tags": [
+        "backend", "field", "colourpicker"
+    ],
     "autoload": {
         "files": [
             "init.php"
