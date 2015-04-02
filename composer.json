@@ -18,8 +18,8 @@
             "init.php"
         ],
         "psr-4": {
-            "Bolt\\Extensions\\Colourpicker\\": "",
-            "Bolt\\Extensions\\Colourpicker\\Tests\\": "tests"
+            "Bolt\\Extensions\\Bolt\\Colourpicker\\": "",
+            "Bolt\\Extensions\\Bolt\\Colourpicker\\Tests\\": "tests"
         }
     },
     
