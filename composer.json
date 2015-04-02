@@ -16,7 +16,7 @@
             "init.php"
         ],
         "psr-4": {
-            "Bolt\\Extensions\\Colourpicker\\": ""
+            "Bolt\\Extensions\\Bolt\\Colourpicker\\": ""
         }
     },
     
