@@ -2,7 +2,7 @@
 namespace Bolt\Extensions\Bolt\Colourpicker\Tests;
 
 use Bolt\Tests\BoltUnitTest;
-use Bolt\Extensions\Colourpicker\Extension;
+use Bolt\Extensions\Bolt\Colourpicker\Extension;
 
 /**
  * This test ensures the Colourpicker Loads correctly.
