@@ -1,5 +1,5 @@
 <?php
-namespace Bolt\Extensions\Colourpicker\Tests;
+namespace Bolt\Extensions\Bolt\Colourpicker\Tests;
 
 use Bolt\Tests\BoltUnitTest;
 use Bolt\Extensions\Colourpicker\Extension;
