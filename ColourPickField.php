@@ -1,12 +1,11 @@
 <?php
 
-namespace Bolt\Extensions\Colourpicker;
+namespace Bolt\Extensions\Bolt\Colourpicker;
 
 use Bolt\Field\FieldInterface;
 
 class ColourPickField implements FieldInterface
 {
-    
     public function getName()
     {
         return 'colourpicker';
@@ -24,7 +23,6 @@ class ColourPickField implements FieldInterface
     
     public function getStorageOptions()
     {
-        return array('default'=>'');
+        return array('default' => '');
     }
-    
 }
