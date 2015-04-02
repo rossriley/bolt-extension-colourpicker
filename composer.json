@@ -11,12 +11,15 @@
     "keywords": [
         "backend", "field", "colourpicker"
     ],
+    "minimum-stability":"dev",
+    "prefer-stable":true,
     "autoload": {
         "files": [
             "init.php"
         ],
         "psr-4": {
-            "Bolt\\Extensions\\Colourpicker\\": ""
+            "Bolt\\Extensions\\Colourpicker\\": "",
+            "Bolt\\Extensions\\Colourpicker\\Tests\\": "tests"
         }
     },
     
