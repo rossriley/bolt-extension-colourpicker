@@ -19,7 +19,7 @@ class ColourPickerExtension extends SimpleExtension
     protected function registerTwigPaths()
     {
         return [
-            'twig' => ['position' => 'prepend', 'namespace' => 'bolt'],
+            'templates' => ['position' => 'prepend', 'namespace' => 'bolt'],
         ];
     }
 
