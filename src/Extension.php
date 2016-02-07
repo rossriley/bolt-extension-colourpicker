@@ -2,10 +2,8 @@
 
 namespace Bolt\Extensions\Bolt\Colourpicker;
 
-use Bolt\Application;
 use Bolt\Asset\File\JavaScript;
 use Bolt\Asset\File\Stylesheet;
-use Bolt\BaseExtension;
 use Bolt\Extension\SimpleExtension;
 use Bolt\Extensions\Bolt\Colourpicker\Provider\ConfigProvider;
 
