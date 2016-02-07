@@ -1,11 +1,11 @@
 <?php
 
-namespace Bolt\Extensions\Bolt\Colourpicker;
+namespace Bolt\Extensions\Bolt\ColourPicker;
 
 use Bolt\Asset\File\JavaScript;
 use Bolt\Asset\File\Stylesheet;
 use Bolt\Extension\SimpleExtension;
-use Bolt\Extensions\Bolt\Colourpicker\Provider\ConfigProvider;
+use Bolt\Extensions\Bolt\ColourPicker\Provider\ConfigProvider;
 
 class Extension extends SimpleExtension
 {

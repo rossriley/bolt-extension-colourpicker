@@ -1,16 +1,16 @@
 <?php
-namespace Bolt\Extensions\Bolt\Colourpicker\Tests;
+namespace Bolt\Extensions\Bolt\ColourPicker\Tests;
 
 use Bolt\Tests\BoltUnitTest;
-use Bolt\Extensions\Bolt\Colourpicker\Extension;
+use Bolt\Extensions\Bolt\ColourPicker\Extension;
 
 /**
- * This test ensures the Colourpicker Loads correctly.
+ * This test ensures the ColourPicker Loads correctly.
  *
  * @author Ross Riley <riley.ross@gmail.com>
  **/
 
-class ColourpickerTest extends BoltUnitTest
+class ColourPickerTest extends BoltUnitTest
 {
     public function testExtensionLoads()
     {

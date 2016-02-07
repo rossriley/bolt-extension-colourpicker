@@ -1,6 +1,6 @@
 <?php
 
-namespace Bolt\Extensions\Bolt\Colourpicker\Field;
+namespace Bolt\Extensions\Bolt\ColourPicker\Field;
 
 use Bolt\Field\FieldInterface;
 

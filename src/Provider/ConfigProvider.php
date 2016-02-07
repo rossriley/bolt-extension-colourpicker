@@ -1,9 +1,9 @@
 <?php
 
-namespace Bolt\Extensions\Bolt\Colourpicker\Provider;
+namespace Bolt\Extensions\Bolt\ColourPicker\Provider;
 
 use Bolt\Config;
-use Bolt\Extensions\Bolt\Colourpicker\Field\ColourPickField;
+use Bolt\Extensions\Bolt\ColourPicker\Field\ColourPickField;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 
