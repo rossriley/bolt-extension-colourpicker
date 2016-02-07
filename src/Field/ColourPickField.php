@@ -2,7 +2,7 @@
 
 namespace Bolt\Extensions\Bolt\ColourPicker\Field;
 
-use Bolt\Field\FieldInterface;
+use Bolt\Storage\Field\FieldInterface;
 
 class ColourPickField implements FieldInterface
 {
@@ -10,17 +10,17 @@ class ColourPickField implements FieldInterface
     {
         return 'colourpicker';
     }
-    
+
     public function getTemplate()
     {
         return '_colourpicker.twig';
     }
-    
+
     public function getStorageType()
     {
         return 'text';
     }
-    
+
     public function getStorageOptions()
     {
         return array('default' => '');
