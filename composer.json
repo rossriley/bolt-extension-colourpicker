@@ -3,7 +3,7 @@
     "description": "An extension to add a colourpicker as a field type within Bolt",
     "type": "bolt-extension",
     "require": {
-        "bolt/bolt": ">1.9,<3.0.0"
+        "bolt/bolt": ">3.0,<4.0"
     },
     "license": "MIT",
     "authors": [{"name": "Ross Riley", "email": "riley.ross@gmail.com"}
@@ -14,16 +14,13 @@
     "minimum-stability":"dev",
     "prefer-stable":true,
     "autoload": {
-        "files": [
-            "init.php"
-        ],
         "psr-4": {
-            "Bolt\\Extensions\\Bolt\\Colourpicker\\": "",
-            "Bolt\\Extensions\\Bolt\\Colourpicker\\Tests\\": "tests"
+            "Bolt\\Extensions\\Bolt\\Colourpicker\\": ""
         }
     },
     
     "extra": {
+        "bolt-class": "Bolt\\Extensions\\Bolt\\Colourpicker\\Extension",
         "bolt-assets": "assets",
         "bolt-screenshots": [
             "screenshot.png"

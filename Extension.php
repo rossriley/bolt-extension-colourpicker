@@ -3,30 +3,33 @@
 namespace Bolt\Extensions\Bolt\Colourpicker;
 
 use Bolt\Application;
+use Bolt\Asset\File\JavaScript;
+use Bolt\Asset\File\Stylesheet;
 use Bolt\BaseExtension;
+use Bolt\Extension\SimpleExtension;
 
-class Extension extends BaseExtension
+class Extension extends SimpleExtension
 {
-    public function __construct(Application $app)
+
+    protected function initialize()
     {
-        parent::__construct($app);
         $this->app['config']->fields->addField(new ColourPickField());
-        if ($this->app['config']->getWhichEnd() === 'backend') {
-            $this->app['htmlsnippets'] = true;
-            $this->app['twig.loader.filesystem']->prependPath(__DIR__.'/twig');
-        }
-    }
-  
-
-    public function initialize()
-    {
-        $this->addCss('assets/colourpicker.css');
-        $this->addJavascript('assets/colourpicker.js', true);
-        $this->addJavascript('assets/start.js', true);
     }
 
-    public function getName()
+    protected function registerTwigPaths()
     {
-        return 'colourpicker';
+        return [
+            'twig' => ['position' => 'prepend', 'namespace'=>'bolt']
+        ];
     }
+
+    protected function registerAssets()
+    {
+        return [
+            new Stylesheet('assets/colourpicker.css'),
+            new JavaScript('assets/colourpicker.js'),
+            new JavaScript('assets/start.js')
+        ];
+    }
+
 }
