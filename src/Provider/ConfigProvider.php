@@ -7,7 +7,7 @@ use Bolt\Extensions\Bolt\Colourpicker\Field\ColourPickField;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 
-class FieldProvider implements ServiceProviderInterface
+class ConfigProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {

@@ -7,13 +7,17 @@ use Bolt\Asset\File\JavaScript;
 use Bolt\Asset\File\Stylesheet;
 use Bolt\BaseExtension;
 use Bolt\Extension\SimpleExtension;
+use Bolt\Extensions\Bolt\Colourpicker\Provider\ConfigProvider;
 
 class Extension extends SimpleExtension
 {
 
-    protected function initialize()
+    public function getServiceProviders()
     {
-        $this->app['config']->fields->addField(new ColourPickField());
+        return [
+            $this,
+            new ConfigProvider()
+        ];
     }
 
     protected function registerTwigPaths()
