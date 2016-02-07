@@ -26,9 +26,9 @@ class ColourPickerExtension extends SimpleExtension
     protected function registerAssets()
     {
         return [
-            new Stylesheet('assets/colourpicker.css'),
-            new JavaScript('assets/colourpicker.js'),
-            new JavaScript('assets/start.js'),
+            new Stylesheet('colourpicker.css'),
+            new JavaScript('colourpicker.js'),
+            new JavaScript('start.js'),
         ];
     }
 }
