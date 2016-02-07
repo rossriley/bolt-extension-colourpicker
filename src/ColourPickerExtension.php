@@ -6,21 +6,20 @@ use Bolt\Asset\File\JavaScript;
 use Bolt\Asset\File\Stylesheet;
 use Bolt\Extension\SimpleExtension;
 use Bolt\Extensions\Bolt\ColourPicker\Field\ColourPickField;
-use Silex\Application;
 
 class ColourPickerExtension extends SimpleExtension
 {
     protected function registerFields()
     {
         return [
-            new ColourPickField()
+            new ColourPickField(),
         ];
     }
 
     protected function registerTwigPaths()
     {
         return [
-            'twig' => ['position' => 'prepend', 'namespace'=>'bolt']
+            'twig' => ['position' => 'prepend', 'namespace' => 'bolt'],
         ];
     }
 
@@ -29,8 +28,7 @@ class ColourPickerExtension extends SimpleExtension
         return [
             new Stylesheet('assets/colourpicker.css'),
             new JavaScript('assets/colourpicker.js'),
-            new JavaScript('assets/start.js')
+            new JavaScript('assets/start.js'),
         ];
     }
-
 }
