@@ -15,7 +15,7 @@
     "prefer-stable":true,
     "autoload": {
         "psr-4": {
-            "Bolt\\Extensions\\Bolt\\Colourpicker\\": ""
+            "Bolt\\Extensions\\Bolt\\Colourpicker\\": "src"
         }
     },
     
