@@ -1,2 +1,2 @@
-### Colourpicker Extension for Bolt
+### ColourPicker Extension for Bolt
 

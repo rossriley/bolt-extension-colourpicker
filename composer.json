@@ -3,25 +3,30 @@
     "description": "An extension to add a colourpicker as a field type within Bolt",
     "type": "bolt-extension",
     "require": {
-        "bolt/bolt": ">3.0,<4.0"
+        "bolt/bolt": "^3.0"
     },
     "license": "MIT",
-    "authors": [{"name": "Ross Riley", "email": "riley.ross@gmail.com"}
+    "authors": [
+        {
+            "name": "Ross Riley",
+            "email": "riley.ross@gmail.com"
+        }
     ],
     "keywords": [
-        "backend", "field", "colourpicker"
+        "backend",
+        "field",
+        "colourpicker"
     ],
-    "minimum-stability":"dev",
-    "prefer-stable":true,
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Bolt\\Extensions\\Bolt\\Colourpicker\\": "src"
+            "Bolt\\Extensions\\Bolt\\ColourPicker\\": "src"
         }
     },
-    
     "extra": {
-        "bolt-class": "Bolt\\Extensions\\Bolt\\Colourpicker\\Extension",
         "bolt-assets": "assets",
+        "bolt-class": "Bolt\\Extensions\\Bolt\\ColourPicker\\ColourPickerExtension",
         "bolt-screenshots": [
             "screenshot.png"
         ]
