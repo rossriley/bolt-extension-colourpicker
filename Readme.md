@@ -1,6 +1,6 @@
 ### ColourPicker Extension for Bolt
 
-This code is created based upon the tutorial located on the Bolt documentation website.
+This code is created based upon the tutorial located in the Bolt documentation website.
 
 [Extensions - Providing Custom Fields](https://docs.bolt.cm/3.0/extensions/advanced/customfields)
 
