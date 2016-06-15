@@ -38,10 +38,10 @@
       if (self.options.picker === true) {
         var selectText = self.$select.find('> option:selected').text();
         self.$icon = $('<span class="simplecolorpicker icon"'
-                     + ' title="' + selectText + '"'
-                     + ' style="background-color: ' + self.$select.val() + ';"'
-                     + ' role="button" tabindex="0">'
-                     + '</span>').insertAfter(self.$select);
+            + ' title="' + selectText + '"'
+            + ' style="background-color: ' + self.$select.val() + ';"'
+            + ' role="button" tabindex="0">'
+            + '</span>').insertAfter(self.$select);
         self.$icon.on('click.' + self.type, $.proxy(self.showPicker, self));
 
         self.$picker = $('<span class="simplecolorpicker picker ' + self.options.theme + '"></span>').appendTo(document.body);
@@ -85,13 +85,13 @@
         }
 
         var $colorSpan = $('<span class="color"'
-                         + title
-                         + ' style="background-color: ' + color + ';"'
-                         + ' data-color="' + color + '"'
-                         + selected
-                         + disabled
-                         + role + '>'
-                         + '</span>');
+            + title
+            + ' style="background-color: ' + color + ';"'
+            + ' data-color="' + color + '"'
+            + selected
+            + disabled
+            + role + '>'
+            + '</span>');
 
         self.$colorList.append($colorSpan);
         $colorSpan.on('click.' + self.type, $.proxy(self.colorSpanClicked, self));
@@ -207,8 +207,8 @@
     // For HTML element passed to the plugin
     return this.each(function() {
       var $this = $(this),
-        data = $this.data('simplecolorpicker'),
-        options = typeof option === 'object' && option;
+          data = $this.data('simplecolorpicker'),
+          options = typeof option === 'object' && option;
       if (data === undefined) {
         $this.data('simplecolorpicker', (data = new SimpleColorPicker(this, options)));
       }

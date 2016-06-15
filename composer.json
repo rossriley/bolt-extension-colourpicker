@@ -25,7 +25,7 @@
         }
     },
     "extra": {
-        "bolt-assets": "assets",
+        "bolt-assets": "web",
         "bolt-class": "Bolt\\Extensions\\Bolt\\ColourPicker\\ColourPickerExtension",
         "bolt-screenshots": [
             "screenshot.png"
