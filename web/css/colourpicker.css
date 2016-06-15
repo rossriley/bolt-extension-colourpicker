@@ -33,16 +33,16 @@
   border: 1px solid rgba(0, 0, 0, .15); /* @dropdown-border */
 
   -webkit-border-radius: 4px; /* @border-radius-base */
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-     -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 
   -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
-          background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
 }
 
 .simplecolorpicker.inline {
